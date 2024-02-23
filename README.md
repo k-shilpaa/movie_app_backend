@@ -48,6 +48,7 @@ Run the Server: Start the server by running `serve-l:8090` command.
 Access Images: Once the server is running, you can access the images by navigating to `http://localhost:8090/<image-name>` in your web browser or making HTTP requests programmatically.
 
 ## Database
+### MySQL
 This project utilizes a MySQL database named projectuser1 to store and manage data. 
 Install MySQL Server: If MySQL Server is not already installed on your system, download and install it from the official MySQL website.
 
