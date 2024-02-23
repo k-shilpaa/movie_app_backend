@@ -46,3 +46,32 @@ Configure Image Folder: Place your images in a folder within the project directo
 Run the Server: Start the server by running `serve-l:8090` command.
 
 Access Images: Once the server is running, you can access the images by navigating to `http://localhost:8090/<image-name>` in your web browser or making HTTP requests programmatically.
+
+## Database
+This project utilizes a MySQL database named projectuser1 to store and manage data. 
+Install MySQL Server: If MySQL Server is not already installed on your system, download and install it from the official MySQL website.
+
+Access MySQL Shell: Open a terminal or command prompt and access the MySQL shell using the command: `mysql -u username -p`
+Create Database: Once inside the MySQL shell, run the following command to create the database: `CREATE DATABASE projecuser1`;
+MySQL Client: You can also connect to the database using MySQL client tools such as MySQL Workbench or command-line client using the MySQL username and password.
+
+### MongoDB
+This project utilizes MongoDB to store and manage users, TV shows, and movie-related data. This README provides instructions on setting up MongoDB and integrating it into the project.
+
+Install MongoDB: If MongoDB is not already installed on your system, download and install it from the official MongoDB website.
+ Once inside the MongoDB shell, switch to the appropriate database or create a new one using the use command
+`use ImageDB`
+`use MovieDB`
+`use PaymentDB`
+`use TvShowDB`
+
+Create Collections: Create collections for movies and users' watchlists as needed:`db.createCollection("movies")`
+`db.createCollection("users")` similarly for TvShowDB as well.
+
+Connect to MongoDB: Configure your project to connect to the MongoDB databases. Use a MongoDB driver or an Object Document Mapper (ODM) such as Mongoose for Node.js applications.
+Schema Definition: Define schemas for images, movies, payments, and TV shows based on your project requirements. 
+CRUD Operations: Implement CRUD (Create, Read, Update, Delete) operations for images, movies, payments, and TV shows using the defined schemas and models.
+
+
+
+
